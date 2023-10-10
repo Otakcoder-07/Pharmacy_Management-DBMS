@@ -60,5 +60,14 @@ button[type="submit"]:hover {
 }
 
 /* Add more styles as needed */
-
+button
+{
+    background-color: #4caf50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
 
