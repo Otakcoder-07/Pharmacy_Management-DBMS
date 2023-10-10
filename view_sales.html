@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pharmacy Management System - Sales History</title>
+    <style>
+        /* Your CSS styles here */
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h2>Sales History</h2>
+        <form action="/view_sales" method="post">
+            <label for="barcode">Enter Barcode:</label>
+            <input type="text" id="barcode" name="barcode" required>
+            <button type="submit">View Sales</button>
+        </form>
+        <div id="sales-results">
+            <!-- Sales information will be displayed here -->
+        </div>
+        <div class="action-buttons">
+            <button onclick="window.location.href='/add_user'">Add User</button>
+            <button onclick="window.location.href='/add_drug'">Add Drug</button>
+            <button onclick="window.location.href='/add_company'">Add Company</button>
+        </div>
+    </div>
+</body>
+
+</html>

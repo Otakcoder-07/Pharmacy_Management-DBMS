@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pharmacy Management System - Add Drug</title>
+    <style>
+        /* Your CSS styles here */
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h2>Add Drug</h2>
+        <form action="/submit_drug" method="post">
+            <table>
+                <tr>
+                    <td><label for="name">Name:</label></td>
+                    <td><input type="text" id="name" name="name" required></td>
+                </tr>
+                <tr>
+                    <td><label for="type">Type:</label></td>
+                    <td><input type="text" id="type" name="type" required></td>
+                </tr>
+                <tr>
+                    <td><label for="barcode">Barcode:</label></td>
+                    <td><input type="text" id="barcode" name="barcode" required></td>
+                </tr>
+                <tr>
+                    <td><label for="dose">Dose:</label></td>
+                    <td><input type="text" id="dose" name="dose" required></td>
+                </tr>
+                <tr>
+                    <td><label for="code">Code:</label></td>
+                    <td><input type="text" id="code" name="code" required></td>
+                </tr>
+                <tr>
+                    <td><label for="costPrice">Cost Price:</label></td>
+                    <td><input type="number" id="costPrice" name="costPrice" required></td>
+                </tr>
+                <tr>
+                    <td><label for="sellingPrice">Selling Price:</label></td>
+                    <td><input type="number" id="sellingPrice" name="sellingPrice" required></td>
+                </tr>
+                <tr>
+                    <td><label for="expiry">Expiry:</label></td>
+                    <td><input type="text" id="expiry" name="expiry" required></td>
+                </tr>
+                <tr>
+                    <td><label for="companyName">Company Name:</label></td>
+                    <td><input type="text" id="companyName" name="companyName" required></td>
+                </tr>
+                <tr>
+                    <td><label for="productionDate">Production Date:</label></td>
+                    <td><input type="date" id="productionDate" name="productionDate" required></td>
+                </tr>
+                <tr>
+                    <td><label for="expirationDate">Expiration Date:</label></td>
+                    <td><input type="date" id="expirationDate" name="expirationDate" required></td>
+                </tr>
+                <tr>
+                    <td><label for="place">Place:</label></td>
+                    <td><input type="text" id="place" name="place" required></td>
+                </tr>
+                <tr>
+                    <td><label for="quantity">Quantity:</label></td>
+                    <td><input type="number" id="quantity" name="quantity" required></td>
+                </tr>
+            </table>
+            <button type="submit">Add Drug</button>
+        </form>
+        <div class="action-buttons">
+            <button onclick="window.location.href='/add_user'">Add User</button>
+            <button onclick="window.location.href='/add_company'">Add Company</button>
+            <button onclick="window.location.href='/view_sales'">View Sales History</button>
+        </div>
+    </div>
+</body>
+
+</html>

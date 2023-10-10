@@ -1,45 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pharmacy Management System</title>
+    <title>Pharmacy Management System - Add User</title>
+    <style>
+        body {
+            background-color: #99ccff;
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding-top: 50px;
+        }
+
+        .container {
+            width: 80%;
+            margin: 0 auto;
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
+        }
+
+        .confirmation-message {
+            font-size: 18px;
+            color: green;
+            margin-bottom: 20px;
+        }
+
+        .action-buttons {
+            margin-top: 20px;
+        }
+
+        .action-buttons button {
+            margin: 0 10px;
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    </style>
 </head>
+
 <body>
-    <h1>Pharmacy Management System</h1>
-
-    <h2>Add User</h2>
-    <form action="/add_user" method="post">
-        <label>Name:</label>
-        <input type="text" name="name" required><br>
-        <label>DOB:</label>
-        <input type="date" name="dob" required><br>
-        <label>Address:</label>
-        <input type="text" name="address" required><br>
-        <label>Phone:</label>
-        <input type="tel" name="phone" required><br>
-        <label>Salary:</label>
-        <input type="number" name="salary" required><br>
-        <label>Password:</label>
-        <input type="password" name="password" required><br>
-        <button type="submit">Add User</button>
-    </form>
-
-    <h2>Add Drug</h2>
-    <form action="/add_drug" method="post">
-        <!-- Include fields for drug information here -->
-        <button type="submit">Add Drug</button>
-    </form>
-
-    <h2>Add Company</h2>
-    <form action="/add_company" method="post">
-        <!-- Include fields for company information here -->
-        <button type="submit">Add Company</button>
-    </form>
-
-    <h2>View Sales History</h2>
-    <form action="/view_sales" method="get">
-        <button type="submit">View Sales History</button>
-    </form>
+    <div class="container">
+        <div class="confirmation-message" id="confirmationMessage">User added successfully!</div>
+        <div class="action-buttons">
+            <button onclick="window.location.href='/add_drug'">Add Drug</button>
+            <button onclick="window.location.href='/add_company'">Add Company</button>
+            <button onclick="window.location.href='/view_sales'">View Sales History</button>
+        </div>
+    </div>
 </body>
+
 </html>

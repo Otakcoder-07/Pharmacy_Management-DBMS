@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pharmacy Management System - Add Company</title>
+    <style>
+        /* Your CSS styles here */
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h2>Add Company</h2>
+        <form action="/submit_company" method="post">
+            <table>
+                <tr>
+                    <td><label for="companyName">Company Name:</label></td>
+                    <td><input type="text" id="companyName" name="companyName" required></td>
+                </tr>
+                <tr>
+                    <td><label for="companyAddress">Address:</label></td>
+                    <td><input type="text" id="companyAddress" name="companyAddress" required></td>
+                </tr>
+                <tr>
+                    <td><label for="companyPhone">Phone:</label></td>
+                    <td><input type="tel" id="companyPhone" name="companyPhone" required></td>
+                </tr>
+            </table>
+            <button type="submit">Add Company</button>
+        </form>
+        <div class="action-buttons">
+            <button onclick="window.location.href='/add_user'">Add User</button>
+            <button onclick="window.location.href='/add_drug'">Add Drug</button>
+            <button onclick="window.location.href='/view_sales'">View Sales History</button>
+        </div>
+    </div>
+</body>
+
+</html>
